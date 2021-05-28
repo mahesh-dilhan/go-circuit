@@ -7,12 +7,12 @@ import (
 )
 
 type patient struct {
-	name string
-	age  int
+	name    string
+	country string
 }
 
 func fetchPatientInfo(ctx context.Context, name string) (*patient, error) {
-	return &patient{name: name, age: 30}, nil
+	return &patient{name: name, country: "USA"}, nil
 }
 
 func main() {
